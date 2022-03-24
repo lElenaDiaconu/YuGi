@@ -11,7 +11,7 @@
         <!-- MAIN -->
         <article>
             <!-- ASIDE -->
-            <section>
+            <section class="side">
                 <ul class="game-phases">
                     <li>Draw Phase</li>
                     &dArr;
@@ -34,16 +34,16 @@
                             <option value="Uno"></option>
                         </datalist> -->
                 <!-- </div> -->
-                <div class="container__carte">
-                    <div class="accumulo">
-                        <img
-                            src="img/bushido.jpg"
-                            alt="Segnalino bushido"
-                            class="segnalino"
-                            height="45rem"
-                        />
-                    </div>
+                <!-- <div class="container__carte"> -->
+                <div class="accumulo">
+                    <img
+                        src="img/bushido.jpg"
+                        alt="Segnalino bushido"
+                        class="segnalino"
+                        height="45rem"
+                    />
                 </div>
+                <!-- </div> -->
             </section>
 
             <!-- PLAYERS -->
@@ -51,7 +51,7 @@
                 <div><button class="btn new">New game</button></div>
                 <div class="score--keeper">
                     <section class="player--1 player active">
-                        <div>
+                        <div class="form hidden">
                             <input
                                 type="text"
                                 placeholder="Name player #1"
@@ -60,12 +60,12 @@
                             />
                             <button class="okBtn player--1">Ok</button>
                         </div>
-                        <h1 class="name1 player hidden">Gabri</h1>
+                        <h1 class="name1 player">Gabri</h1>
                         <h1 class="life--points" id="points--1">8000</h1>
                     </section>
 
                     <section class="player--2 player">
-                        <div>
+                        <div class="form hidden">
                             <input
                                 type="text"
                                 placeholder="Name player #2"
@@ -74,7 +74,7 @@
                             />
                             <button class="okBtn player--2">Ok</button>
                         </div>
-                        <h1 class="name2 player hidden">Lari</h1>
+                        <h1 class="name2 player">Lari</h1>
                         <h1 class="life--points" id="points--2">8000</h1>
                     </section>
                 </div>
@@ -90,7 +90,6 @@
                         class="input"
                     />
                     <button class="btn go">Go!</button>
-                    <!-- <button class="btn change">Change player</button> -->
                 </div>
             </main>
         </article>

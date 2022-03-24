@@ -21,18 +21,18 @@ let atk = 0;
 let atkDef = 0;
 
 // Inserisco nomi
-for (const [i, btn] of btnOk.entries()) {
-    btn.addEventListener("click", function () {
-        if (btn.classList.contains(`player--${i + 1}`)) {
-            document.getElementById(`name${i + 1}`).classList.add("hidden");
-            document.querySelector(`.name${i + 1}`).textContent = document.getElementById(
-                `name${i + 1}`
-            ).value;
-            document.querySelector(`.name${i + 1}`).classList.remove("hidden");
-            btn.classList.add("hidden");
-        }
-    });
-}
+// for (const [i, btn] of btnOk.entries()) {
+//     btn.addEventListener("click", function () {
+//         if (btn.classList.contains(`player--${i + 1}`)) {
+//             document.getElementById(`name${i + 1}`).classList.add("hidden");
+//             document.querySelector(`.name${i + 1}`).textContent = document.getElementById(
+//                 `name${i + 1}`
+//             ).value;
+//             document.querySelector(`.name${i + 1}`).classList.remove("hidden");
+//             btn.classList.add("hidden");
+//         }
+//     });
+// }
 
 // Cambio giocatore attivo
 
