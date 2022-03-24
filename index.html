@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game ON</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- MAIN -->
+        <article>
+            <!-- ASIDE -->
+            <section>
+                <ul class="game-phases">
+                    <li>Draw Phase</li>
+                    &dArr;
+                    <li>Stanby Phase</li>
+                    &dArr;
+                    <li>Main Phase 1</li>
+                    &dArr;
+                    <li>Battle Phase</li>
+                    &dArr;
+                    <li>Main Phase 2</li>
+                    &dArr;
+                    <li>End Phase</li>
+                </ul>
+
+                <!-- <div class="seleziona bushido"> -->
+                <button class="btn bushidobtn">BANZAI!</button>
+                <!-- <button class="btn add__card">&#1007;</button> -->
+                <!-- <input list="cars" />
+                        <datalist id="cars">
+                            <option value="Uno"></option>
+                        </datalist> -->
+                <!-- </div> -->
+                <div class="container__carte">
+                    <div class="accumulo">
+                        <img
+                            src="img/bushido.jpg"
+                            alt="Segnalino bushido"
+                            class="segnalino"
+                            height="45rem"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- PLAYERS -->
+            <main>
+                <div><button class="btn new">New game</button></div>
+                <div class="score--keeper">
+                    <section class="player--1 player active">
+                        <h1 class="name1 player">Gabri</h1>
+                        <input
+                            type="text"
+                            placeholder="Name player #1"
+                            id="name1"
+                            class="input hidden"
+                        />
+                        <h1 class="life--points" id="points--1">8000</h1>
+                    </section>
+
+                    <section class="player--2 player">
+                        <h1 class="name1 player">Lari</h1>
+                        <input
+                            type="text"
+                            placeholder="Name player #2"
+                            id="name2"
+                            class="input hidden"
+                        />
+                        <h1 class="life--points" id="points--2">8000</h1>
+                    </section>
+                </div>
+                <section class="player player--2">
+                    <button class="btn change">Change player</button>
+                </section>
+                <div class="damage">
+                    <input type="text" placeholder="ATK Attaccante" id="ATK" class="input" />
+                    <input
+                        type="text"
+                        placeholder="ATK/DEF Avversario"
+                        id="ATK/DEF"
+                        class="input"
+                    />
+                    <button class="btn go">Go!</button>
+                    <!-- <button class="btn change">Change player</button> -->
+                </div>
+            </main>
+        </article>
+        <!-- 
+        <div class="bushido">
+           <div class="seleziona bushido">
+            <button class="btn bushidobtn">BANZAI!</button>
+           <input list="cars" />
+                <datalist id="cars">
+                    <option value="Uno"></option>
+                </datalist> 
+           </div> 
+            <div class="accumulo">
+                <img
+                    src="img/bushido.jpg"
+                    alt="Segnalino bushido"
+                    class="segnalino"
+                    height="45rem"
+                />
+            </div>
+        </div> -->
+        <script src="script.js"></script>
+    </body>
+</html>
