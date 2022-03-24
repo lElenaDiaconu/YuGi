@@ -5,7 +5,7 @@ const btnChange = document.querySelector(".change");
 const btnGo = document.querySelector(".go");
 const btnBanzai = document.querySelector(".bushidobtn");
 const btnAddCard = document.querySelector(".add__card");
-
+const btnOk = document.querySelectorAll(".okBtn");
 const player1 = document.querySelector(".player--1");
 const player2 = document.querySelector(".player--2");
 
@@ -20,11 +20,24 @@ let lifepoints = 0;
 let atk = 0;
 let atkDef = 0;
 
+// Inserisco nomi
+for (const [i, btn] of btnOk.entries()) {
+    btn.addEventListener("click", function () {
+        if (btn.classList.contains(`player--${i + 1}`)) {
+            document.getElementById(`name${i + 1}`).classList.add("hidden");
+            document.querySelector(`.name${i + 1}`).textContent = document.getElementById(
+                `name${i + 1}`
+            ).value;
+            document.querySelector(`.name${i + 1}`).classList.remove("hidden");
+            btn.classList.add("hidden");
+        }
+    });
+}
+
 // Cambio giocatore attivo
 
 btnChange.addEventListener("click", function () {
-    player1.classList.toggle("active");
-    player2.classList.toggle("active");
+    changePlayer();
 });
 
 // DAMAGE STEP
