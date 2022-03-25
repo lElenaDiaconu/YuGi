@@ -48,10 +48,10 @@
 
             <!-- PLAYERS -->
             <main>
-                <div><button class="btn new">New game</button></div>
+                <div><button class="btn new hidden">New game</button></div>
                 <div class="score--keeper">
                     <section class="player--1 player active">
-                        <div class="form hidden">
+                        <div class="form">
                             <input
                                 type="text"
                                 placeholder="Name player #1"
@@ -60,12 +60,22 @@
                             />
                             <button class="okBtn player--1">Ok</button>
                         </div>
-                        <h1 class="name1 player">Gabri</h1>
-                        <h1 class="life--points" id="points--1">8000</h1>
+                        <h1 class="name1 player_name hidden">Gabri</h1>
+                        <div class="attributes">
+                            <div>
+                                <p>LP</p>
+                                <h1 class="life--points" id="points--1">8000</h1>
+                            </div>
+                            <div>
+                                <p class="bonus">Bonus/Malus</p>
+                                <input type="text" id="bonus1" placeholder="ATK" />
+                                <input type="text" id="bonus1" placeholder="DEF" />
+                            </div>
+                        </div>
                     </section>
 
                     <section class="player--2 player">
-                        <div class="form hidden">
+                        <div class="form">
                             <input
                                 type="text"
                                 placeholder="Name player #2"
@@ -74,13 +84,23 @@
                             />
                             <button class="okBtn player--2">Ok</button>
                         </div>
-                        <h1 class="name2 player">Lari</h1>
-                        <h1 class="life--points" id="points--2">8000</h1>
+                        <h1 class="name2 player_name hidden">Lari</h1>
+                        <div class="attributes">
+                            <div>
+                                <p>LP</p>
+                                <h1 class="life--points" id="points--1">8000</h1>
+                            </div>
+                            <div>
+                                <p class="bonus">Bonus/Malus</p>
+                                <input type="text" id="bonus1" placeholder="ATK" />
+                                <input type="text" id="bonus1" placeholder="DEF" />
+                            </div>
+                        </div>
                     </section>
                 </div>
-                <section class="player player--2">
+                <!-- <section class="player player--2">
                     <button class="btn change">Change player</button>
-                </section>
+                </section> -->
                 <div class="damage">
                     <input type="number" placeholder="ATK Attaccante" id="ATK" class="input" />
                     <input
